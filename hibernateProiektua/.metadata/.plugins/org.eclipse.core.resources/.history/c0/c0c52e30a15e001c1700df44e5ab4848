@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	<f:view>
+		<h:head>
+			<title>JavaServer Faces aplikazioa</title>
+		</h:head>
+		<h:body>
+			<h:form>
+				<h3>Log In</h3>
+				
+				<table>
+					<tr>
+					<td><h4>Posta elektronikoa:</h4></td>
+					<td><h:inputText id="eposta" value="#{logIn.eposta}"></h:inputText></td>
+					</tr>
+					<tr>
+					<td><h4>Pasahitza:</h4></td>
+					<td><h:inputSecret id="pas" value="#{logIn.pasahitza}"></h:inputSecret></td>
+					</tr>
+				</table>
+				
+				<p>
+					<h:commandButton value="Log In" action="#{registerBean.erregistratu}"/>
+				</p>				
+				
+				<p>
+					<h:commandButton value="Back" action="Main"/>
+				</p>
+				
+				<h:messages id="mezuak" style="color:blue"/>
+				
+			</h:form>
+		</h:body>
+	</f:view>
+</html>

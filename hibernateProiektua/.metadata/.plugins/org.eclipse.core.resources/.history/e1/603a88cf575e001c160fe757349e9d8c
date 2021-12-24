@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16371456576390" configfile="/BetsJSF/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Main.xhtml" x="80" y="111" id="pf16371470010756" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf16372246882920 pf16372275560282 pf16396465522600" path="/Main.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="FindQuestion.xhtml" x="288" y="111" id="pf16372246882921" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16372246882920" path="/FindQuestion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CreateQuestion.xhtml" x="317" y="257" id="pf16372275560283" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf16372275560282" path="/CreateQuestion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Register.xhtml" x="252" y="12" id="pf16396465522611" inlinks="pf16396465522600" path="/Register.xhtml"/>
+  <links id="pf16372246882920" target="pf16372246882921" source="pf16371470010756" outcome="findQuestion"/>
+  <links id="pf16372275560282" target="pf16372275560283" source="pf16371470010756" outcome="createQuestion"/>
+  <links id="pf16396465522600" target="pf16396465522611" source="pf16371470010756" outcome="register"/>
+</pageflow:Pageflow>

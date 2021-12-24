@@ -1,0 +1,19 @@
+package eredua.bean;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import businessLogic.BLFacade;
+import eredua.domeinua.Question;
+
+public class DefentsaBean {
+
+	private BLFacade facadeBL;
+	private List<Question> questions;
+	private Question question;
+	
+	public DefentsaBean() {
+		this.facadeBL = FacadeBean.getBusinessLogic();
+		this.questions = new ArrayList<Question>();
+	}
+}

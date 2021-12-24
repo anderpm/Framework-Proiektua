@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<f:view>
+		<h:head>
+			<title>JavaServer Faces aplikazioa</title>
+		</h:head>
+		<h:body>
+		
+			<h:form id="formularioa">
+				<h3>Event date:</h3>
+				<p:calendar id="data" value="#{createQuestionBean.data}" navigator="false" mode="inline">
+				<p:ajax event="dateSelect" listener="#{createQuestionBean.onDateSelect}" update=":formularioa:mezuak :formularioa:eventakMenu"></p:ajax>	
+				</p:calendar>
+						
+				<h3>Eventak:</h3>
+				<h:selectOneMenu id="eventakMenu" value="#{createQuestionBean.event}" converter="omnifaces.SelectItemsConverter">
+					<f:selectItems value="#{createQuestionBean.eventak}"/>
+				</h:selectOneMenu>
+		
+				<table>
+					<tr>
+					<td><h4>Question:</h4></td>
+					<td><h:inputText id="question" value="#{createQuestionBean.question}"></h:inputText></td>
+					</tr>
+					<tr>
+					<td><h4>Min bet:</h4></td>
+					<td><h:inputText id="minBet" value="#{createQuestionBean.minBet}"></h:inputText></td>
+					</tr>
+				</table>
+			
+				<p>
+					<h:commandButton value="Create Question" action="#{createQuestionBean.create}"/>
+				</p>				
+				
+				<p>
+					<h:commandButton value="Back" action="Menua"/>
+				</p>
+				
+				<h:messages id="mezuak" style="color:blue"/>
+				
+			</h:form>
+			
+		</h:body>
+	</f:view>
+</html>

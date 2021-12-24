@@ -1,0 +1,62 @@
+package eredua.bean;
+
+import businessLogic.BLFacade;
+import eredua.domeinua.User;
+
+public class LogInBean {
+	
+	private BLFacade facadeBL;
+	private String eposta;
+	private String pasahitza;
+	private User user;
+	
+	public LogInBean() {
+		this.facadeBL = FacadeBean.getBusinessLogic();
+	}
+	
+	public BLFacade getFacadeBL() {
+		return facadeBL;
+	}
+	
+	public void setFacadeBL(BLFacade facadeBL) {
+		this.facadeBL = facadeBL;
+	}
+	
+	public String getEposta() {
+		return eposta;
+	}
+	
+	public void setEposta(String eposta) {
+		this.eposta = eposta;
+	}
+	
+	public String getPasahitza() {
+		return pasahitza;
+	}
+	
+	public void setPasahitza(String pasahitza) {
+		this.pasahitza = pasahitza;
+	}
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public String logeatu() {
+		User u = facadeBL.logeatu(eposta, pasahitza);
+		System.out.println(u.getIzena());
+		this.setUser(u);
+		if(u.getIzena() != null) {
+			System.out.println("Erabiltzailea ondo logeatu da");
+			return "ok";
+		}
+		else {
+			return "error";
+		}
+	}
+	
+}

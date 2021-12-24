@@ -1,0 +1,11 @@
+package eredua.bean;
+
+import businessLogic.BLFacade;
+
+public class LogInBean {
+	
+	private BLFacade facadeBL;
+	private String eposta;
+	private String pasahitza;
+
+}

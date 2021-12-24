@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16371456576390" configfile="/BetsJSF/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Main.xhtml" x="80" y="156" id="pf16371470010756" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf16396465522600 pf16396529437450" path="/Main.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="FindQuestion.xhtml" x="509" y="168" id="pf16372246882921" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf16396980455762" path="/FindQuestion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CreateQuestion.xhtml" x="504" y="300" id="pf16372275560283" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" inlinks="pf16396980505383" path="/CreateQuestion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Register.xhtml" x="204" y="60" id="pf16396465522611" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16396465522600" path="/Register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="LogIn.xhtml" x="210" y="252" id="pf16396529437451" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf16396933278390" inlinks="pf16396529437450" path="/LogIn.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Menua.xhtml" x="336" y="252" id="pf16396933278391" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf16396980455762 pf16396980505383 pf16397291923740" inlinks="pf16396933278390" path="/Menua.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Defentsa.xhtml" x="397" y="133" id="pf16397291923741" inlinks="pf16397291923740" path="/Defentsa.xhtml"/>
+  <links id="pf16396465522600" target="pf16396465522611" source="pf16371470010756" outcome="register"/>
+  <links id="pf16396529437450" target="pf16396529437451" source="pf16371470010756" outcome="logIn"/>
+  <links id="pf16396933278390" target="pf16396933278391" source="pf16396529437451" outcome="ok"/>
+  <links id="pf16396980455762" target="pf16372246882921" source="pf16396933278391" outcome="findQuestion"/>
+  <links id="pf16396980505383" target="pf16372275560283" source="pf16396933278391" outcome="createQuestion"/>
+  <links id="pf16397291923740" target="pf16397291923741" source="pf16396933278391" outcome="defentsa"/>
+</pageflow:Pageflow>

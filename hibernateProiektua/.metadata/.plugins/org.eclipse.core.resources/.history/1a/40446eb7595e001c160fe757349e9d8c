@@ -1,0 +1,18 @@
+package eredua.bean;
+
+import businessLogic.BLFacade;
+
+public class RegisterBean {
+
+	private BLFacade facadeBL;
+	private String eposta;
+	private String izena;
+	private String pasahitza;
+	private String pasahitza2;
+	
+	public RegisterBean() {
+		this.facadeBL = FacadeBean.getBusinessLogic();
+	}
+	
+	
+}

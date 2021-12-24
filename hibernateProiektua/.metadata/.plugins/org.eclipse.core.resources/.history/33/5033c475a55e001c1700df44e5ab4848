@@ -1,0 +1,43 @@
+package eredua.bean;
+
+import businessLogic.BLFacade;
+
+public class LogInBean {
+	
+	private BLFacade facadeBL;
+	private String eposta;
+	private String pasahitza;
+	
+	public LogInBean() {
+		this.facadeBL = FacadeBean.getBusinessLogic();
+	}
+	
+	public BLFacade getFacadeBL() {
+		return facadeBL;
+	}
+	
+	public void setFacadeBL(BLFacade facadeBL) {
+		this.facadeBL = facadeBL;
+	}
+	
+	public String getEposta() {
+		return eposta;
+	}
+	
+	public void setEposta(String eposta) {
+		this.eposta = eposta;
+	}
+	
+	public String getPasahitza() {
+		return pasahitza;
+	}
+	
+	public void setPasahitza(String pasahitza) {
+		this.pasahitza = pasahitza;
+	}
+	
+	public void logeatu() {
+		
+	}
+	
+}

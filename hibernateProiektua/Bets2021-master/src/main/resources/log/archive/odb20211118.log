@@ -1,0 +1,115 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-18 09:31:45 #1 store] 
+Database 'C:\Users\Sleekbook\Desktop\frameworkProiektua\Bets2021-master\src\main\resources\bets.temp' is opened by 7852@Hp
+
+[2021-11-18 09:31:46 #2 type.registry] 
+New type domain.Event
+
+[2021-11-18 09:31:46 #3 type] 
+Type domain.Event is not enhanced.
+
+[2021-11-18 09:31:46 #4 type.registry] 
+New type domain.Question
+
+[2021-11-18 09:31:46 #5 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-11-18 09:31:46 #6 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-18 09:31:46 #7 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-18 10:03:05 #1 store] 
+Database 'C:\Users\Sleekbook\Desktop\frameworkProiektua\Bets2021-master\src\main\resources\bets.temp' is opened by 12916@Hp
+
+[2021-11-18 10:03:06 #2 type.registry] 
+New type domain.Event
+
+[2021-11-18 10:03:06 #3 type] 
+Type domain.Event is not enhanced.
+
+[2021-11-18 10:03:06 #4 type.registry] 
+New type domain.Question
+
+[2021-11-18 10:03:06 #5 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-11-18 10:03:06 #6 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-18 10:03:06 #7 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-18 11:03:08 #1 store] 
+Database 'C:\Users\Sleekbook\Desktop\frameworkProiektua\Bets2021-master\src\main\resources\bets.temp' is opened by 8236@Hp
+
+[2021-11-18 11:03:10 #2 type.registry] 
+New type domain.Event
+
+[2021-11-18 11:03:10 #3 type] 
+Type domain.Event is not enhanced.
+
+[2021-11-18 11:03:10 #4 type.registry] 
+New type domain.Question
+
+[2021-11-18 11:03:10 #5 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-11-18 11:03:10 #6 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-18 11:03:10 #7 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-18 18:34:29 #1 store] 
+Database 'C:\Users\Sleekbook\Desktop\frameworkProiektua\Bets2021-master\src\main\resources\bets.temp' is opened by 11016@Hp
+
+[2021-11-18 18:34:30 #2 type.registry] 
+New type domain.Event
+
+[2021-11-18 18:34:30 #3 type] 
+Type domain.Event is not enhanced.
+
+[2021-11-18 18:34:30 #4 type.registry] 
+New type domain.Question
+
+[2021-11-18 18:34:30 #5 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-11-18 18:34:30 #6 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-18 18:34:30 #7 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-18 21:52:20 #1 store] 
+Database 'C:\Users\Sleekbook\Desktop\frameworkProiektua\Bets2021-master\src\main\resources\bets.temp' is opened by 5660@Hp
+
+[2021-11-18 21:52:23 #2 type.registry] 
+New type domain.Event
+
+[2021-11-18 21:52:23 #3 type] 
+Type domain.Event is not enhanced.
+
+[2021-11-18 21:52:23 #4 type.registry] 
+New type domain.Question
+
+[2021-11-18 21:52:23 #5 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-11-18 21:52:23 #6 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-18 21:52:23 #7 type.registry] 
+New type java.util.Vector<java.lang.Object>
+

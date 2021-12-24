@@ -1,0 +1,10 @@
+package eredua.bean;
+
+import businessLogic.BLFacade;
+
+public class RegisterBean {
+
+	private BLFacade facadeBL;
+	private User user;
+	
+}

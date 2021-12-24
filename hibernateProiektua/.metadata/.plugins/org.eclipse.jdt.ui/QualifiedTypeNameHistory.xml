@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.primefaces.event.SelectEvent"/>
+    <fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+    <fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+    <fullyQualifiedTypeName name="domain.Event"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="businessLogic.BLFacade"/>
+    <fullyQualifiedTypeName name="businessLogic.BLFacadeImplementation"/>
+    <fullyQualifiedTypeName name="dataAccess.DataAccess"/>
+    <fullyQualifiedTypeName name="sun.tools.tree.ThisExpression"/>
+    <fullyQualifiedTypeName name="domain.Question"/>
+    <fullyQualifiedTypeName name="dataAccess.DataAccessInterface"/>
+    <fullyQualifiedTypeName name="eredua.domeinua.Event"/>
+    <fullyQualifiedTypeName name="eredua.domeinua.Question"/>
+    <fullyQualifiedTypeName name="eredua.HibernateUtil"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="dataAccess.HibernateDataAccess"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="org.hibernate.Query"/>
+    <fullyQualifiedTypeName name="eredua.domeinua.User"/>
+</qualifiedTypeNameHistroy>

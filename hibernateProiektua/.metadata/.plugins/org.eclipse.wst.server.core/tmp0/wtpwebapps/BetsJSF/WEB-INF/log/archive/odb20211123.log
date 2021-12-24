@@ -1,0 +1,25 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-23 14:58:11 #1 store] 
+Database 'C:\Windows\System32\src\main\resources\bets.temp' has been recovered (tr. 9-9)
+
+[2021-11-23 14:58:11 #2 store] 
+Database 'C:\Windows\System32\src\main\resources\bets.temp' is opened by 11456@Hp
+
+[2021-11-23 14:58:12 #3 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-23 14:58:12 #4 type] 
+Type domain.Event is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-11-23 15:03:44 #1 store] 
+Database 'C:\Windows\System32\src\main\resources\bets.temp' is opened by 10388@Hp
+
+[2021-11-23 15:03:44 #2 type] 
+Type domain.Question is not enhanced.
+
+[2021-11-23 15:03:44 #3 type] 
+Type domain.Event is not enhanced.
+

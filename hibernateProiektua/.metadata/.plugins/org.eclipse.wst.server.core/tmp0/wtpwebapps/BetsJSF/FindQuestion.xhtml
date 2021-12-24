@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<f:view>
+		<h:head>
+			<title>JavaServer Faces aplikazioa</title>
+		</h:head>
+		<h:body>
+		
+			<h:form id="formularioa">
+				<h3>Event date</h3>
+				<p:calendar id="data" value="#{findQuestionBean.data}" navigator="false" mode="inline">
+				<p:ajax event="dateSelect" listener="#{findQuestionBean.onDateSelect}" update=":formularioa:eventakTaula"></p:ajax>	
+				</p:calendar>
+				
+				<h3>Event</h3>
+				<p:dataTable id="eventakTaula" value="#{findQuestionBean.eventak}" var="Event" selectionMode="single"
+					selection="#{findQuestionBean.event}" border="1" rowKey="#{Event.eventNumber}">
+					<f:facet name="header">Events:</f:facet>
+					<p:ajax event="rowSelect" listener="#{findQuestionBean.onEventSelect}" update=":formularioa:questionsTaula"></p:ajax>
+					<p:column headerText="#Event">#{Event.eventNumber}</p:column>
+					<p:column headerText="Event">#{Event.description}</p:column>
+				</p:dataTable>
+				
+				<h3>Questions</h3>
+				<p:dataTable id="questionsTaula" value="#{findQuestionBean.questions}" var="Question" selectionMode="single"
+					selection="#{findQuestionBean.question}" border="1" rowKey="#{Question.questionNumber}">
+					<f:facet name="header">Questions:</f:facet>
+					<p:column headerText="#Event">#{Question.questionNumber}</p:column>
+					<p:column headerText="Event">#{Question.question}</p:column>
+				</p:dataTable>
+				
+				<p>
+					<h:commandButton value="Back" action="Menua" actionListener="#{findQuestionBean.hustu}"/>
+				</p>
+				
+			</h:form>
+			
+		</h:body>
+	</f:view>
+</html>

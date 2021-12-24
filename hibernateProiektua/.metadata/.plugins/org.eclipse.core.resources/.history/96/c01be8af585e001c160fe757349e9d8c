@@ -1,0 +1,57 @@
+package eredua.domeinua;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer userID;
+	
+	private String Izena;
+	
+	private String Eposta;
+	
+	private String Pasahitza;
+	
+	public User() {
+		super();
+	}
+
+	public Integer getUserID() {
+		return userID;
+	}
+
+	public void setUserID(Integer userID) {
+		this.userID = userID;
+	}
+
+	public String getIzena() {
+		return Izena;
+	}
+
+	public void setIzena(String izena) {
+		Izena = izena;
+	}
+
+	public String getEposta() {
+		return Eposta;
+	}
+
+	public void setEposta(String eposta) {
+		Eposta = eposta;
+	}
+
+	public String getPasahitza() {
+		return Pasahitza;
+	}
+
+	public void setPasahitza(String pasahitza) {
+		Pasahitza = pasahitza;
+	}
+	
+}
